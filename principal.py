@@ -6,23 +6,12 @@ def area_cuadrado(lado):
 def rhombusArea(d1,d2): 
     area = (d1*d2)/2
     return area
-
-def circleArea(r):
-    result = (math.pi)*(r*r)
-    return result
 	
+def volCilindro(radio, altura):
+	volCili = math.pi*(radio**2)*altura
+	print(f"El Volumen del Cilindro es {volCili}")
+
+
 area_cuadrado(6) 
-rhombusArea(5,10):
+volCilindro(4, 5)
 	
-
-# volumen de un paralelepipedo Jaime Díaz
-def Volumen_del_paralelepipedo(n1,n2,n3):
-    volum = (n1*n2*n3)
-    return volum
-    
-n1 = float( input("Ingreasa medida del lado a: " ))
-n2 = float( input("Ingreasa medida del lado b: " ))
-n3 = float( input("Ingreasa medida del lado c: " ))
-
-res = Volumen_del_paralelepipedo(n1,n2,n3)
-print(f"El volumen es {res}")
